@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0566E01329E2DF6C009647F2 /* AccountKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0566E01229E2DF6C009647F2 /* AccountKit.docc */; };
 		0566E01929E2DF6C009647F2 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0566E00E29E2DF6C009647F2 /* AccountKit.framework */; };
-		0566E01E29E2DF6C009647F2 /* AccountKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566E01D29E2DF6C009647F2 /* AccountKitTests.swift */; };
-		0566E01F29E2DF6C009647F2 /* AccountKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0566E01129E2DF6C009647F2 /* AccountKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0566E08829E2F87B009647F2 /* Tests__ in Resources */ = {isa = PBXBuildFile; fileRef = 0566E08429E2F87A009647F2 /* Tests__ */; };
+		0566E08929E2F87B009647F2 /* Sources__ in Resources */ = {isa = PBXBuildFile; fileRef = 0566E08529E2F87A009647F2 /* Sources__ */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,10 +24,9 @@
 
 /* Begin PBXFileReference section */
 		0566E00E29E2DF6C009647F2 /* AccountKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccountKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0566E01129E2DF6C009647F2 /* AccountKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountKit.h; sourceTree = "<group>"; };
-		0566E01229E2DF6C009647F2 /* AccountKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AccountKit.docc; sourceTree = "<group>"; };
 		0566E01829E2DF6C009647F2 /* AccountKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0566E01D29E2DF6C009647F2 /* AccountKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountKitTests.swift; sourceTree = "<group>"; };
+		0566E08429E2F87A009647F2 /* Tests__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tests__; sourceTree = "<group>"; };
+		0566E08529E2F87A009647F2 /* Sources__ */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sources__; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +51,8 @@
 		0566E00429E2DF6C009647F2 = {
 			isa = PBXGroup;
 			children = (
-				0566E01029E2DF6C009647F2 /* AccountKit */,
-				0566E01C29E2DF6C009647F2 /* AccountKitTests */,
+				0566E08529E2F87A009647F2 /* Sources__ */,
+				0566E08429E2F87A009647F2 /* Tests__ */,
 				0566E00F29E2DF6C009647F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,23 +66,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0566E01029E2DF6C009647F2 /* AccountKit */ = {
-			isa = PBXGroup;
-			children = (
-				0566E01129E2DF6C009647F2 /* AccountKit.h */,
-				0566E01229E2DF6C009647F2 /* AccountKit.docc */,
-			);
-			path = AccountKit;
-			sourceTree = "<group>";
-		};
-		0566E01C29E2DF6C009647F2 /* AccountKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				0566E01D29E2DF6C009647F2 /* AccountKitTests.swift */,
-			);
-			path = AccountKitTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -92,7 +73,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0566E01F29E2DF6C009647F2 /* AccountKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +157,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0566E08829E2F87B009647F2 /* Tests__ in Resources */,
+				0566E08929E2F87B009647F2 /* Sources__ in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +176,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0566E01329E2DF6C009647F2 /* AccountKit.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +183,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0566E01E29E2DF6C009647F2 /* AccountKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +248,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -323,6 +305,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -345,7 +329,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -354,7 +338,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hoju.AccountKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -380,7 +364,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
@@ -389,7 +373,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = hoju.AccountKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
